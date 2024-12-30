@@ -6,7 +6,8 @@ import swaggerUI from "swagger-ui-express";
 import swaggerSpecs from "../../swagger/swagger.js";
 
 const corsOptions = {
-  origin: "*",
+  origin:
+    "https://task-manager-prueba-tecnica-5cm91wpui-tbuixados-projects.vercel.app", // Cambia este enlace por el de tu aplicación en Vercel
 };
 
 const app = express();
