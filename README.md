@@ -6,7 +6,7 @@ Proyecto desarrollado por **Tomas Buixados**.
 
 Puedes acceder a la aplicación desplegada: https://task-manager-prueba-tecnica-tbuixados-projects.vercel.app/.
 
-## Instalación y Ejecución Local
+## Instalación, Ejecución Local y Correr la Base de Datos
 
 Para ejecutar el proyecto localmente, sigue estos pasos:
 
