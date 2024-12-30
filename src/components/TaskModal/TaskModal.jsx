@@ -17,7 +17,7 @@ export const TaskModal = ({ selectedTask, setModalOpen, update, setUpdate }) => 
 
         const updatedTask = { ...selectedTask, titulo: titulo, descripcion: descripcion }
         try {
-            await axios.put(`https://task-manager-prueba-tecnica.up.railway.app/api/tasks/${selectedTask._id}`, updatedTask)
+            await axios.put(`http://localhost:9090/api/tasks/${selectedTask._id}`, updatedTask)
             setSaved(true)
             setTimeout(() => {
                 setSaved(false)

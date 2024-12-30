@@ -10,7 +10,7 @@ export const TaskList = ({ update, setUpdate, modalOpen, setModalOpen }) => {
 
     const getAllTasks = async () => {
         try {
-            const response = await axios.get("https://task-manager-prueba-tecnica.up.railway.app/api/tasks")
+            const response = await axios.get("http://localhost:9090/api/tasks")
             if (!response.data) {
                 console.error("La respuesta no contiene el array de tareas esperado ", + response.data)
                 return;
@@ -23,7 +23,7 @@ export const TaskList = ({ update, setUpdate, modalOpen, setModalOpen }) => {
 
     const deleteTask = async (id) => {
         try {
-            await axios.delete(`https://task-manager-prueba-tecnica.up.railway.app/localhost:9090/api/tasks/${id}`)
+            await axios.delete(`http://localhost:9090/api/tasks/${id}`)
             setUpdate(!update)
 
         } catch (error) {
@@ -39,7 +39,7 @@ export const TaskList = ({ update, setUpdate, modalOpen, setModalOpen }) => {
         }
         const updatedTask = { ...task, estado: !task.estado }
         try {
-            await axios.put(`https://task-manager-prueba-tecnica.up.railway.app/api/tasks/${id}`, updatedTask)
+            await axios.put(`http://localhost:9090/api/tasks/${id}`, updatedTask)
             setUpdate(!update)
         } catch (error) {
             console.error("Error al actualizar el estado de la tarea: ", error)

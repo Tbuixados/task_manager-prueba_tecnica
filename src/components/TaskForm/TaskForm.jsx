@@ -22,7 +22,7 @@ export const TaskForm = ({ update, setUpdate }) => {
         }
 
         try {
-            const response = await axios.post("https://task-manager-prueba-tecnica.up.railway.app/api/tasks", newTaskData, {
+            const response = await axios.post("http://localhost:9090/api/tasks", newTaskData, {
                 headers: {
                     "Content-Type": "application/json"
                 },
