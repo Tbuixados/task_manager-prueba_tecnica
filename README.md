@@ -4,7 +4,7 @@ Proyecto desarrollado por **Tomas Buixados**.
 
 ## Enlace a la Aplicación Desplegada
 
-Puedes acceder a la aplicación desplegada: ().
+Puedes acceder a la aplicación desplegada: https://task-manager-prueba-tecnica-tbuixados-projects.vercel.app/.
 
 ## Instalación y Ejecución Local
 
